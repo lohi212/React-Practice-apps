@@ -1,0 +1,24 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    border: 1px solid rgb(192, 181, 181);
+    padding: 10px;
+    /* margin: 5px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px; 
+}
+
+.h-full {
+    height: 100vh;
+}
