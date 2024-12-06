@@ -1,0 +1,15 @@
+.product {
+    margin: 20px;
+}
+
+.cart-wrapper {
+    display: flex;
+}
+
+.cart {
+    border-left: 1px solid rgb(197, 186, 186);
+}
+
+.all-items-wrapper, .cart {
+    width: 50%;
+}
