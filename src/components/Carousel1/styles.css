@@ -1,0 +1,28 @@
+.dummy-image {
+   
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(190, 184, 184);
+    border-radius: 6px;
+    background-color: aliceblue;
+
+    position: absolute;
+}
+
+.dummy-images-wrapper {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    height: 100%;
+}
