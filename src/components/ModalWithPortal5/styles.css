@@ -1,0 +1,20 @@
+.modal-wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    height: 100vh;
+    
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: aliceblue;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
