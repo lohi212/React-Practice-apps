@@ -7,15 +7,19 @@ const Carousel = () => {
   const [curr, setCurr] = useState(0);
 
   const handlePrev = () => {
-    const newCurr = curr > 0 ? curr - 1 : 4;
+    if (curr >= 1) {
+      const newCurr = curr > 0 ? curr - 1 : 4;
 
-    setCurr(newCurr);
+      setCurr(newCurr);
+    }
   };
 
   const handleNext = () => {
-    const newCurr = curr < 4 ? curr + 1 : 0;
+    if (curr < arr.length - 3) {
+      const newCurr = curr < 4 ? curr + 1 : 0;
 
-    setCurr(newCurr);
+      setCurr(newCurr);
+    }
   };
 
   return (
@@ -25,20 +29,21 @@ const Carousel = () => {
         <Button onClick={handleNext}>Next</Button>
       </div>
       {/* For one image */}
-      <div className="dummy-images-wrapper">
-        <div key={arr[curr]} className="dummy-image center">
-          {arr[curr]}
-        </div>
+
+      <div key={arr[curr]} className="dummy-image center">
+        {arr[curr]}
       </div>
 
       {/* For set of 3 images */}
-      {arr.slice(curr, curr + 3).map((ele) => (
-        <div className="dummy-images-wrapper">
-          <div key={ele} className="dummy-image center">
-            {ele}
+      <div className="dummy-images-wrapper">
+        {arr.slice(curr, curr + 3).map((ele) => (
+          <div className="dummy-images-wrapper">
+            <div key={ele} className="dummy-image center">
+              {ele}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

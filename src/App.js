@@ -13,12 +13,12 @@ function App() {
   return (
     <div>
       {/* <CartRedux /> */}
-      {/* <Carousel /> */}
+      <Carousel />
       {/* <TicTacToe /> */}
       {/* <ProgressBar /> */}
       {/* <ModalWithPortal /> */}
       {/* <NestedComments /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
     </div>
   );
 }

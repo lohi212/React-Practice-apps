@@ -6,11 +6,12 @@
     border-radius: 6px;
     background-color: aliceblue;
 
-    position: absolute;
+    /* position: absolute; */
 }
 
 .dummy-images-wrapper {
-    position: relative;
+    display: flex;
+    gap: 10px;
 }
 
 .flex {
