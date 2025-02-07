@@ -8,17 +8,19 @@ import ProgressBar from "./components/ProgressBar4";
 import ModalWithPortal from "./components/ModalWithPortal5";
 import NestedComments from "./components/NestedComments6";
 import StopWatch from "./components/StopWatch7";
+import InfiniteScroll from "./components/InfiniteScroll8";
 
 function App() {
   return (
     <div>
       {/* <CartRedux /> */}
-      <Carousel />
+      {/* <Carousel /> */}
       {/* <TicTacToe /> */}
       {/* <ProgressBar /> */}
       {/* <ModalWithPortal /> */}
       {/* <NestedComments /> */}
       {/* <StopWatch /> */}
+      <InfiniteScroll />
     </div>
   );
 }

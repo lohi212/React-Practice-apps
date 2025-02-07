@@ -1,0 +1,13 @@
+.w-100 {
+  width: 100px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.infinite-box {
+    border: 1px solid grey;
+    overflow-y: scroll;
+    margin: 20px;
+}
