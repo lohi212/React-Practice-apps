@@ -6,15 +6,6 @@ const Carousel = () => {
   const arr = [1, 2, 3, 4, 5];
   const [curr, setCurr] = useState(0);
 
-  useEffect(() => {
-    const allImages = document.querySelectorAll(".dummy-image");
-
-    allImages.forEach((img, i) => {
-      img.style.transform = `translateX(${(i - curr) * 300}px)`;
-      img.style.visibility = i === curr ? "visible" : "hidden"; // Hide non-current elements
-    });
-  }, [curr]);
-
   const handlePrev = () => {
     const newCurr = curr > 0 ? curr - 1 : 4;
 
@@ -33,14 +24,21 @@ const Carousel = () => {
         <Button onClick={handlePrev}>Prev</Button>
         <Button onClick={handleNext}>Next</Button>
       </div>
-
+      {/* For one image */}
       <div className="dummy-images-wrapper">
-        {arr.map((ele) => (
+        <div key={arr[curr]} className="dummy-image center">
+          {arr[curr]}
+        </div>
+      </div>
+
+      {/* For set of 3 images */}
+      {arr.slice(curr, curr + 3).map((ele) => (
+        <div className="dummy-images-wrapper">
           <div key={ele} className="dummy-image center">
             {ele}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };

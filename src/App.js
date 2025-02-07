@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Carousel from "./components/Carousel1";
+import CartRedux from "./components/CartRedux0";
+import TicTacToe from "./components/TicTacToe2";
+import TrafficLights from "./components/TrafficLights3";
+import ProgressBar from "./components/ProgressBar4";
+import ModalWithPortal from "./components/ModalWithPortal5";
+import NestedComments from "./components/NestedComments6";
+import StopWatch from "./components/StopWatch7";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <CartRedux /> */}
+      {/* <Carousel /> */}
+      {/* <TicTacToe /> */}
+      {/* <ProgressBar /> */}
+      {/* <ModalWithPortal /> */}
+      {/* <NestedComments /> */}
+      <StopWatch />
     </div>
   );
 }
